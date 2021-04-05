@@ -22,12 +22,12 @@ const Post = () => {
   };
 
   return (
-    <>
+    <div style={{ overflowX: "hidden" }}>
       <Navbar toggle={toggle} toggleTheme={toggleTheme} theme={theme} />
       <HeroSection theme={theme} />
       <Contents theme={theme} />
       <Footer />
-    </>
+    </div>
   );
 };
 

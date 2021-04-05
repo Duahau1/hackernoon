@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BlogPostContainer, WordLine } from "./PostElement";
 import Paragraph from "./Paragraph";
 import { HeroH1 } from "../HeroSection/HeroElement";
@@ -99,7 +99,12 @@ const [completed, setcompleted] = useState(undefined);`,
   </>
 );`,
   ];
-
+  const [dimension, setDimension] = useState(window.innerWidth);
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      setDimension(window.innerWidth);
+    });
+  }, []);
   return (
     <BlogPostContainer style={{ color: props.theme }}>
       <Paragraph>
@@ -172,8 +177,8 @@ const [completed, setcompleted] = useState(undefined);`,
         </p>
       </Paragraph>
       <iframe
-        width="750"
-        height="380"
+        width={dimension / 2}
+        height={dimension / 3}
         src="https://www.youtube.com/embed/Y7pL5wG5QOg"
         title="YouTube video player"
         frameBorder="0"
