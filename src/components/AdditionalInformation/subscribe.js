@@ -5,17 +5,17 @@ import {
   SubscribeText,
 } from "./InfoTableElement";
 import { BiGlassesAlt } from "react-icons/bi";
-const Subscribe = () => {
+const Subscribe = (props) => {
   return (
     <SubscribeContainer>
       <SubscriberButton>
         <a
           href="https://app.hackernoon.com/signup"
-          style={{ textDecoration: "none", color: "white" }}
+          style={{ textDecoration: "none", color: props.theme }}
         >
           Join Hacker Noon
         </a>
-        <BiGlassesAlt style={{ marginLeft: "0.3rem" }} />
+        <BiGlassesAlt style={{ marginLeft: "0.3rem" }} fill={props.theme} />
       </SubscriberButton>
       <SubscribeText>
         Create your free account to unlock your custom reading experience.

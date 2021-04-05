@@ -126,7 +126,7 @@ function EmojiBox(props) {
       }}
     >
       {props.blogPost == "false" ? (
-        <LikesDisplay>{likes}</LikesDisplay>
+        <LikesDisplay style={{ color: props.theme }}>{likes}</LikesDisplay>
       ) : (
         <Separator
           style={{

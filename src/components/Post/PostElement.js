@@ -33,7 +33,6 @@ export const BlogPostContainer = styled.div`
 `;
 export const ParagraphContainer = styled.div`
   font-size: 1.3rem;
-  color: rgb(246, 247, 249);
   font-family: monospace;
   display: flex;
   justify-conten: space-between;

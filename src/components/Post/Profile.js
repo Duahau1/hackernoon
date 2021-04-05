@@ -7,7 +7,7 @@ import {
 import { FooterLink } from "../Footer/FooterElement";
 import { FiGithub } from "react-icons/fi";
 import { FaTwitter } from "react-icons/fa";
-const UserProfile = () => {
+const UserProfile = (props) => {
   return (
     <UserProfileContainer>
       <a href="https://hackernoon.com/u/codebucks" target="_blank">
@@ -20,15 +20,15 @@ const UserProfile = () => {
         <FooterLink
           href="https://hackernoon.com/u/codebucks"
           target="_blank"
-          style={{ marginLeft: "0rem", fontSize: "1rem" }}
+          style={{ marginLeft: "0rem", fontSize: "1rem", color: props.theme }}
         >
           @codebucks
         </FooterLink>
       </div>
-      <UserProfileParagraph style={{ fontSize: "0.8rem" }}>
+      <UserProfileParagraph style={{ fontSize: "0.8rem", color: props.theme }}>
         CodeBucks
       </UserProfileParagraph>
-      <UserProfileParagraph>
+      <UserProfileParagraph style={{ color: props.theme }}>
         Helping you to learn code! here you'll find tutorials around web
         development. Keep Coding...😜
       </UserProfileParagraph>

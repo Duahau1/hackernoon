@@ -6,7 +6,6 @@ export const TableHeader = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 2em;
-  color: white;
   border: 1px solid white;
   text-align: center;
   font-size: 1.4rem;
@@ -20,7 +19,6 @@ export const TableRow = styled.div`
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 2em;
-  color: white;
   border: 1px solid white;
   text-align: left;
   font-size: 1.4rem;
@@ -35,7 +33,6 @@ export const TagSection = styled.h2`
   max-width: 1000px;
   display: flex;
   flex-direction: row;
-  color: white;
   text-align: center;
   font-size: 2.4rem;
   font-family: monospace;
@@ -67,7 +64,6 @@ export const Badge = styled.div`
   padding: 10px;
   margin: 0px 10px 10px 0px;
   line-height: 1em;
-  color: white;
   font-size: 1.4rem;
   font-family: monospace;
   cursor: pointer;
@@ -77,7 +73,6 @@ export const Badge = styled.div`
   }
 `;
 export const SubscribeContainer = styled.div`
-  color: white;
   text-align: center;
   font-size: 2.4rem;
   font-family: monospace;
@@ -103,7 +98,6 @@ export const SubscribeText = styled.p`
   margin: 2rem 0;
 `;
 export const EndProfileContainer = styled.div`
-  color: white;
   text-align: center;
   font-size: 2.4rem;
   font-family: monospace;
@@ -116,7 +110,6 @@ export const EndprofileBox = styled.div`
   padding: 10px;
   margin: 0px 10px 10px 0px;
   line-height: 1em;
-  color: white;
   font-size: 1.5rem;
   font-family: monospace;
   text-align: left;

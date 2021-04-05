@@ -24,8 +24,8 @@ const Post = () => {
   return (
     <>
       <Navbar toggle={toggle} toggleTheme={toggleTheme} theme={theme} />
-      <HeroSection style={theme} />
-      <Contents />
+      <HeroSection theme={theme} />
+      <Contents theme={theme} />
       <Footer />
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import { Table, TableHeader, TableRow, TableItem } from "./InfoTableElement";
 
-const InformationTable = () => {
+const InformationTable = (props) => {
   const STORIES = [
     `ReactJS Pagination Tutorial: Building from Scratch by @codebucks`,
     `60fps: Powerful Tricks & Tools To Stop TypeScript and Javascript Jank by @whydoidoit`,
@@ -20,8 +20,8 @@ const InformationTable = () => {
   ];
   return (
     <Table>
-      <TableHeader>
-        <TableItem>
+      <TableHeader style={{ border: `1px solid ${props.theme}` }}>
+        <TableItem style={{ borderRight: `1px solid ${props.theme}` }}>
           <div>Related Stories</div>
         </TableItem>
         <TableItem>
@@ -47,8 +47,8 @@ const InformationTable = () => {
         </TableItem>
       </TableHeader>
       {STORIES.map((val, index) => (
-        <TableRow>
-          <TableItem>
+        <TableRow style={{ border: `1px solid ${props.theme}` }}>
+          <TableItem style={{ borderRight: `1px solid ${props.theme}` }}>
             <div style={{ fontSize: "1.0rem" }}>{val}</div>
           </TableItem>
           <TableItem>

@@ -20,7 +20,7 @@ import {
 } from "react-icons/fa";
 import { AiFillMail } from "react-icons/ai";
 
-const EndProfile = () => {
+const EndProfile = (props) => {
   return (
     <EndProfileContainer>
       <SocialMedia style={{ marginBottom: "1rem" }}>
@@ -72,12 +72,18 @@ const EndProfile = () => {
             <FooterLink
               href="https://hackernoon.com/u/codebucks"
               target="_blank"
-              style={{ marginLeft: "0rem", fontSize: "1.6rem" }}
+              style={{
+                marginLeft: "0rem",
+                fontSize: "1.6rem",
+                color: props.theme,
+              }}
             >
               @codebucks
             </FooterLink>
           </div>
-          <UserProfileParagraph style={{ fontSize: "1.6rem" }}>
+          <UserProfileParagraph
+            style={{ fontSize: "1.6rem", color: props.theme }}
+          >
             CodeBucks
           </UserProfileParagraph>
         </div>

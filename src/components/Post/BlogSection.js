@@ -11,7 +11,7 @@ import Tags from "../AdditionalInformation/Tags";
 import Subscribe from "../AdditionalInformation/subscribe";
 import EndProfile from "../AdditionalInformation/EndProfile";
 import "./BlogStyle.css";
-const BlogSection = () => {
+const BlogSection = (props) => {
   const codesnippet = [
     `  useEffect(() => {
     setTimeout(() => {
@@ -101,7 +101,7 @@ const [completed, setcompleted] = useState(undefined);`,
   ];
 
   return (
-    <BlogPostContainer>
+    <BlogPostContainer style={{ color: props.theme }}>
       <Paragraph>
         <p>Hey People,</p>
       </Paragraph>
@@ -118,7 +118,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://www.npmjs.com/package/react-loading?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             react-loading
           </FooterLink>
@@ -131,7 +135,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://www.npmjs.com/package/react-lottie?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             react-lottie
           </FooterLink>
@@ -173,7 +181,9 @@ const [completed, setcompleted] = useState(undefined);`,
         allowFullScreen
         style={{ margin: "1.5rem" }}
       ></iframe>
-      <HeroH1 style={{ textAlign: "left", margin: "3rem 0.5rem" }}>
+      <HeroH1
+        style={{ textAlign: "left", margin: "3rem 0.5rem", color: props.theme }}
+      >
         Let's Start Building...
       </HeroH1>
       <Paragraph>
@@ -206,14 +216,20 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://jsonplaceholder.typicode.com/guide/?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             jsonplaceholder API{" "}
           </FooterLink>
           to get data, to show how we can use pre-loader when using API.{" "}
         </p>
       </Paragraph>
-      <HeroH1 style={{ textAlign: "left", margin: "3rem 0.5rem" }}>
+      <HeroH1
+        style={{ textAlign: "left", margin: "3rem 0.5rem", color: props.theme }}
+      >
         Type-1
       </HeroH1>
       <Paragraph>
@@ -258,7 +274,7 @@ const [completed, setcompleted] = useState(undefined);`,
           {codesnippet[0]}
         </SyntaxHighlighter>
       </div>
-      <HeroH1 style={{ margin: "3rem 0.5rem" }}>
+      <HeroH1 style={{ margin: "3rem 0.5rem", color: props.theme }}>
         You can put your own logic in useEffect!
       </HeroH1>
       <Paragraph>
@@ -271,7 +287,7 @@ const [completed, setcompleted] = useState(undefined);`,
           that set done state to true.
         </p>
       </Paragraph>
-      <HeroH1 style={{ margin: "3rem 0.5rem" }}>
+      <HeroH1 style={{ margin: "3rem 0.5rem", color: props.theme }}>
         NOTE: Here I have used time out function for 2 seconds so that we can
         see loading screen for more time.
       </HeroH1>
@@ -299,7 +315,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://jsonplaceholder.typicode.com/guide/?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             here
           </FooterLink>
@@ -322,7 +342,9 @@ const [completed, setcompleted] = useState(undefined);`,
 
       {/* Type 2 conten*/}
 
-      <HeroH1 style={{ textAlign: "left", margin: "3rem 0.5rem" }}>
+      <HeroH1
+        style={{ textAlign: "left", margin: "3rem 0.5rem", color: props.theme }}
+      >
         Type-2
       </HeroH1>
       <Paragraph>
@@ -347,7 +369,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://lottiefiles.com/1055-world-locations?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             https://lottiefiles.com/
           </FooterLink>
@@ -363,7 +389,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://lottiefiles.com/1127-success?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             https://lottiefiles.com/1055-world-locations
           </FooterLink>
@@ -376,7 +406,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://lottiefiles.com/?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             https://lottiefiles.com/1127-success
           </FooterLink>
@@ -403,7 +437,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://www.npmjs.com/package/react-lottie?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             here
           </FooterLink>
@@ -465,7 +503,7 @@ const [completed, setcompleted] = useState(undefined);`,
           {codesnippet[3]}
         </SyntaxHighlighter>
       </div>
-      <HeroH1 style={{ margin: "3rem 0.5rem" }}>
+      <HeroH1 style={{ margin: "3rem 0.5rem", color: props.theme }}>
         You can put your own logic in useEffect!
       </HeroH1>
       <Paragraph>
@@ -526,7 +564,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://lottiefiles.com/page/license?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             https://lottiefiles.com/page/license
           </FooterLink>
@@ -542,7 +584,9 @@ const [completed, setcompleted] = useState(undefined);`,
 
       {/*Type 3 */}
 
-      <HeroH1 style={{ textAlign: "left", margin: "3rem 0.5rem" }}>
+      <HeroH1
+        style={{ textAlign: "left", margin: "3rem 0.5rem", color: props.theme }}
+      >
         Type-3
       </HeroH1>
       <Paragraph>
@@ -641,7 +685,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://github.com/codebucks27/React-Loading-Screen?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             here
           </FooterLink>
@@ -660,7 +708,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://www.youtube.com/channel/UCeYt6blRBKuNrEg_-282fSA?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             @CodeBucks
           </FooterLink>
@@ -672,7 +724,11 @@ const [completed, setcompleted] = useState(undefined);`,
           <FooterLink
             href="https://dev.to/codebucks/create-3-different-types-of-loading-screens-in-react-5bba?ref=hackernoon.com"
             target="_blank"
-            style={{ marginLeft: "0rem", fontSize: "1.3rem" }}
+            style={{
+              marginLeft: "0rem",
+              fontSize: "1.3rem",
+              color: props.theme,
+            }}
           >
             here
           </FooterLink>
@@ -681,10 +737,10 @@ const [completed, setcompleted] = useState(undefined);`,
       <WordLine>
         <EmojiBar blogPost="false" style={{ justifyContent: "center" }} />
       </WordLine>
-      <EndProfile />
-      <InformationTable />
+      <EndProfile theme={props.theme} />
+      <InformationTable theme={props.theme} />
       <Tags />
-      <Subscribe />
+      <Subscribe theme={props.theme} />
     </BlogPostContainer>
   );
 };

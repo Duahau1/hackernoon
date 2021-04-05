@@ -28,16 +28,16 @@ const MONTHS = [
 ];
 const SUFFIX = ["st", "nd", "rd", "th"];
 
-function HeroSection() {
+function HeroSection({ theme }) {
   return (
-    <HeroContainer>
+    <HeroContainer style={{ theme }.theme}>
       <HeroContent>
-        <HeroH1>
+        <HeroH1 style={{ color: { theme }.theme.color }}>
           Step by Step Guide to Create 3 Different Types of Loading Screens in
           React
         </HeroH1>
         <HeroSubHeader>
-          <HeroP1>
+          <HeroP1 style={{ color: { theme }.theme.color }}>
             {`${MONTHS[new Date().getMonth()]} ${
               new Date().getDate() +
               "" +
@@ -62,7 +62,7 @@ function HeroSection() {
           </HeroP2>
         </HeroSubHeader>
         <HeroSubHeader>
-          <EmojiBox blogPost="false" />
+          <EmojiBox blogPost="false" theme={{ theme }.theme.color} />
         </HeroSubHeader>
         <HeroSubHeader>
           <LandingImages
