@@ -1,3 +1,14 @@
+<h1>Hackernoon Project</h1>
+
+## Contributors
+
+[![](https://avatars1.githubusercontent.com/u/35185555?s=50)](https://github.com/Duahau1)
+
+## Demo
+
+Walkthrough video: https://www.loom.com/share/c194cd41d4ec46b7b7fe82f427b14e49
+Link: https://hackernoon-duahau1.vercel.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
